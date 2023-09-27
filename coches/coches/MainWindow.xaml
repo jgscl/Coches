@@ -1,0 +1,45 @@
+﻿<Window x:Class="coches.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:coches"
+        mc:Ignorable="d"
+        Title="Gestión Coches" Height="450" Width="800" >
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Edicion">
+                <MenuItem Header="Añadir Coche" Click="MenuItem_Click_AnadirCoche"/>
+                <MenuItem Header="Ver Coches" Click="MenuItem_Click_VerCoches"/>
+            </MenuItem>
+            
+        </Menu>
+        <Grid DockPanel.Dock="Bottom"  Margin="15" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Canvas Name="lienzoLateralIz" Grid.Row="1" Grid.Column="0">
+                
+            </Canvas>
+            <ScrollViewer Name="scroller" Grid.Row="1" Grid.Column="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Disabled">
+                <Canvas Background="Beige" Name="lienzoPrincipal" >
+                </Canvas>
+            </ScrollViewer>
+            <Canvas Name="lienzoLateralDer" Grid.Row="1" Grid.Column="2" Margin="0, 0, 10, 0">
+                
+            </Canvas>
+
+            <Button Name="botonVolverPrincipal" Click="botonVolverPrincipal_Click" Grid.Column="1" Grid.Row="0" Content="Volver" Width="200" Margin="5" Visibility="Hidden"/>
+            <Canvas Name="lienzoInf" Grid.Column="1" Grid.Row="2">
+                
+            </Canvas>
+        </Grid>
+    </DockPanel>
+</Window>

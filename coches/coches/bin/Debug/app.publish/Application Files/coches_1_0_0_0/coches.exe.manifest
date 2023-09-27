@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="coches.exe" version="1.0.0.0" publicKeyToken="7f8aba7d259973ba" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="coches" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="coches.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="coches.exe" size="31712">
+      <assemblyIdentity name="coches" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ArECv8+0hKkFut4PQJEIfXYYm2Wj29tbDJIHrU8SBkk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="coches.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP-E14I5KS0\gsjua" issuerKeyHash="d0470040d0375bf72892369b4a9326557ddc0d94" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>D1N1agRJA2Tq965BK6mK//cMHFeGqfcGEQDo81WhT4k=</DigestValue></Reference></SignedInfo><SignatureValue>BfjwnTnSeMc6wHhypGZd0KkRYnM09z4ZtYpYR9BNRQs6MP+OdUJBBxF/d9dkGgc3qmmqGcApAtlEeAeN11uqHPSClAsjmjbZCCZvNP4t/HdGkuvVh5HKyJCqbp+ISBT94vPlLHxAjnB1jTY9hGYOQPhKg6Wx+R87WHB8j+hCTBI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4EVF5Eb5AoHAIHRH59FYS0Niw/Xth6Lkz/j5WO1ZYbzSMgSwFsO2O+OkNdMk7M7s7Uqu53wPfA7qmeO7nP6gQ11AQs3V0BKHw0EGfANJCtSArW3mvGnq2nRsZ8Yr4+K4ni9+mFyUYS1JMlvlxeYg0sK56nh2Jmnr+SsM//M1wD0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="894fa155f3e8001106f7a986571c0cf7ff8aa92b41aef7ea640349046a75530f" Description="" Url=""><as:assemblyIdentity name="coches.exe" version="1.0.0.0" publicKeyToken="7f8aba7d259973ba" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-E14I5KS0\gsjua</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>qW1SvRMP5U5xbjhMeDsPSHTT10DmrNJBpeT2SEFF+d8=</DigestValue></Reference></SignedInfo><SignatureValue>YjQvUGiIG0Q3Rmb249JybkWA7MyWTOrfsQ2ix40WNK4ulhBzA/vCnn9v1aUlRYbWxtec0STYKO3mec9lYuRVpj3lpeWFMKCWVicLCmEhXIfg8JFrD/eEDoWWJ2STm3oZdBP54JN5i/mFcKdch9PsTvA/XYsOMO8HERc0rZAqR4I=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>4EVF5Eb5AoHAIHRH59FYS0Niw/Xth6Lkz/j5WO1ZYbzSMgSwFsO2O+OkNdMk7M7s7Uqu53wPfA7qmeO7nP6gQ11AQs3V0BKHw0EGfANJCtSArW3mvGnq2nRsZ8Yr4+K4ni9+mFyUYS1JMlvlxeYg0sK56nh2Jmnr+SsM//M1wD0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQPXUod/0LrLZDeH521mRqDzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBFADEANABJADUASwBTADAAXABnAHMAagB1AGEwHhcNMjIxMjA5MjE1ODMxWhcNMjMxMjEwMDM1ODMxWjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBFADEANABJADUASwBTADAAXABnAHMAagB1AGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOBFReRG+QKBwCB0R+fRWEtDYsP17Yei5M/4+VjtWWG80jIEsBbDtjvjpDXTJOzO7O1Krud8D3wO6pnju5z+oENdQELN1dASh8NBBnwDSQrUgK1t5rxp6tp0bGfGK+PiuJ4vfphclGEtSTJb5cXmINLCuep4diZp6/krDP/zNcA9AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAbbpI0mpjU/dc1lB5zAz/Mg7ksoqSq/cnQVKntiJ792xLw5CUR4qaPkvlQIfnl66NYTm5OdOyW4dneFH907pcHruvavaVfhaqg9mCSjFFhndrU9BXh7NaAhXlaGi8MH9Y+ZSkteryc1xHeUDxEfK2a5MT66YJGonJa35jRQEOOTQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
